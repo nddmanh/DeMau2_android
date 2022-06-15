@@ -56,6 +56,12 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor findNv() {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("SELECT * FROM NhanVien WHERE tennv LIKE '%Nam%' AND namsinh = 1995", null);
+        return cursor;
+    }
+
     // Vi trị
     public Boolean insertVitri (ViTri viTri) {
         SQLiteDatabase DB = this.getWritableDatabase();
@@ -77,6 +83,4 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = DB.rawQuery("SELECT * FROM ViTri", null);
         return cursor;
     }
-
-
 }

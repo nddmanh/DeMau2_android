@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:text="NHAN VIEN"/>
 
-
     <Button
         android:id="@+id/btn_qlvitri"
         android:layout_width="match_parent"
@@ -21,14 +20,11 @@
         android:layout_below="@id/btn_qlnhanvien"
         android:text="Vi tri"/>
 
-
     <Button
         android:id="@+id/btn_qlvitricv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_qlvitri"
-        android:text="Vi tri cong vien"/>
-
-
+        android:text="Vi tri cong viec" />
 
 </RelativeLayout>
