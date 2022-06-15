@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VitriCongViecActivity">
+
+    <TextView
+        android:id="@+id/tv_vitri_congviec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:text="vi tri cong viec"/>
+
+    <Spinner
+        android:id="@+id/ma_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@id/tv_vitri_congviec"
+        android:hint="ten vi tri"
+        />
+
+    <Spinner
+        android:id="@+id/ma_vitri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ma_nv"
+        android:background="@android:drawable/btn_dropdown"
+        android:hint="mo ta vi tri"
+        />
+
+    <EditText
+        android:id="@+id/thoi_gian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ma_vitri"
+        android:hint="Thoi gian gan"
+        />
+
+    <EditText
+        android:id="@+id/mota_vtcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thoi_gian"
+        android:hint="mo ta "
+        />
+
+</RelativeLayout>

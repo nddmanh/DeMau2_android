@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VitriActivity">
+
+    <TextView
+        android:id="@+id/tv_vitri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="vi tri"/>
+
+    <EditText
+        android:id="@+id/ten_vi_tri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_vitri"
+        android:hint="ten vi tri"
+        />
+
+    <EditText
+        android:id="@+id/mota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ten_vi_tri"
+        android:hint="mo ta vi tri"
+        />
+
+    <Button
+        android:id="@+id/btn_addvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mota"
+        android:text="Add"/>
+
+    <Button
+        android:id="@+id/btn_viewvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_addvt"
+        android:text="View"/>
+
+</RelativeLayout>
