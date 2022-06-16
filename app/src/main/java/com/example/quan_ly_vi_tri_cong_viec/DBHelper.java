@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.example.quan_ly_vi_tri_cong_viec.models.NhanVien;
 import com.example.quan_ly_vi_tri_cong_viec.models.ViTri;
+import com.example.quan_ly_vi_tri_cong_viec.models.VitriCongViec;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -81,6 +82,30 @@ public class DBHelper extends SQLiteOpenHelper {
     public Cursor getViTri() {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("SELECT * FROM ViTri", null);
+        return cursor;
+    }
+
+    // Vi tri cong viec
+    public Boolean insertVitriCongviec (VitriCongViec vitriCongViec) {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("manv", vitriCongViec.getManv());
+        contentValues.put("mavt", vitriCongViec.getMavt());
+        contentValues.put("thoigian", vitriCongViec.getThoigian());
+        contentValues.put("mota", vitriCongViec.getMota());
+
+        long result = DB.insert("VitriCongViec", null, contentValues);
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public Cursor getViTriCongViec() {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("SELECT * FROM VitriCongViec", null);
         return cursor;
     }
 }

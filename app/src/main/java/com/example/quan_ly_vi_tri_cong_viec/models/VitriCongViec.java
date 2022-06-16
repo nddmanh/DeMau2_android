@@ -4,8 +4,7 @@ public class VitriCongViec {
     private int mavtcv, manv, mavt;
     private String thoigian, mota;
 
-    public VitriCongViec(int mavtcv, int manv, int mavt, String thoigian, String mota) {
-        this.mavtcv = mavtcv;
+    public VitriCongViec(int manv, int mavt, String thoigian, String mota) {
         this.manv = manv;
         this.mavt = mavt;
         this.thoigian = thoigian;

@@ -37,8 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ma_vitri"
-        android:hint="Thoi gian gan"
-        />
+        android:hint="Thoi gian gan" />
 
     <EditText
         android:id="@+id/mota_vtcv"
@@ -46,6 +45,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/thoi_gian"
         android:hint="mo ta "
+        />
+
+    <Button
+        android:id="@+id/btn_addnvvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mota_vtcv"
+        android:layout_marginTop="10dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btn_viewnvvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_addnvvt"
+        android:text="View"
+        android:layout_marginTop="10dp"
         />
 
 </RelativeLayout>
